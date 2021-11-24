@@ -1,0 +1,39 @@
+<%- include('header'); -%>
+ <div class="content">
+  <h1 id="Register">Register</h1>
+ </div>
+ <div>
+  <form id="registerForm" action="/api/register" method="POST">
+    <label for="num_client">Client Number (shoudlnt this be done automatically?) :</label>
+    <input type="number" id="num_client" required><br>
+    <label for="num_client">Client Number (shoudlnt this be done automatically?) :</label>
+    <input type="number" id="num_client" required><br>
+    <label for="society">Your Society :</label>
+    <input type="text" id="society" required><br>
+    <label for="contact">Name of Contact/Your Name (not sure?) :</label>
+    <input type="text" id="contact" required><br>
+    <label for="address">Your Address :</label>
+    <input type="text" id="address" required><br>
+    <label for="zipcode">Your Zipcode :</label>
+    <input type="text" id="zipcode" required><br>
+    <label for="city">Your City :</label>
+    <input type="text" id="city" required><br>
+    <label for="phone"> Your Phone</label>
+    <input type="text" id="phone" required><br>
+    <label for="fax"> Your Fax</label>
+    <input type="text" id="fax" required><br>
+    <label for="confirmation"> Confirmation? number or boolean type (user facing?) :</label>
+    <input type="number" id="confirmation"><br>
+    <label for="payment"> Payment (user facing?) :</label>
+    <input type="text" id="payment"><br>
+    <label for="informations"> Informations (user facing?) :</label>
+    <input type="text" id="informations"><br>
+    <label for="max_outstanding"> Max Outstanding (user facing?) :</label>
+    <input type="number" id="max_outstanding"><br>
+
+    <br>
+    <label for="registerSubmit">Submit :</label>
+    <input type="submit" id="registerSubmit">
+  </form>
+</div>
+<%- include('footer'); -%>
